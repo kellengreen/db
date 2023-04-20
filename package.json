@@ -1,0 +1,20 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "db": "node src/main.js",
+    "apply": "terraform -chdir=tf apply -auto-approve",
+    "ssh": "ssh -i ~/Downloads/kg-kp.pem ec2-user@54.218.160.47",
+    "sync": "rsync -rv -e 'ssh -i ~/Downloads/kg-kp.pem' --exclude tf --exclude node_modules ~/src/db ec2-user@54.218.160.47:/home/ec2-user"
+  },
+  "dependencies": {
+    "@aws-sdk/credential-providers": "^3.316.0",
+    "@aws-sdk/rds-signer": "^3.315.0",
+    "pg": "^8.10.0"
+  }
+}

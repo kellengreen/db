@@ -1,0 +1,50 @@
+export const defaultDatabase = "";
+export const defaultTable = "";
+export const defaultPublication = "";
+export const defaultSubscription = "";
+
+export const region = "";
+export const adminUser = "";
+export const adminPass = "";
+
+export const writeDelay = 100;
+export const readDelay = 500;
+
+export const clusterProxy = {
+  name: "proxy",
+  config: {
+    host: "",
+    port: 0,
+    database: "",
+    user: "",
+    password: undefined,
+    ssl: true,
+  },
+};
+
+export const clusterBlue = {
+  name: "blue",
+  config: {
+    host: "",
+    port: 0,
+    database: "",
+    user: "",
+    password: "",
+  },
+};
+
+export const clusterGreen = {
+  name: "green",
+  config: {
+    host: "",
+    port: 0,
+    database: "",
+    user: "",
+    password: "",
+  },
+};
+
+export const poolConfig = {
+  query_timeout: 2000,
+  connectionTimeoutMillis: 2000,
+};

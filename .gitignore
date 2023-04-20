@@ -1,0 +1,9 @@
+node_modules
+config.js
+
+.terraform
+*.tfstate
+*.tfstate.*
+variables.tf
+
+.DS_Store

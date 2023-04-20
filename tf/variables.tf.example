@@ -1,0 +1,43 @@
+variable "region" {
+  default = ""
+}
+
+############
+# POSTGRES #
+############
+
+variable "pg_db" {
+  default = ""
+}
+
+variable "pg_user" {
+  default = ""
+}
+
+variable "pg_pass" {
+  default = ""
+}ewd
+
+##########
+# SUBNET #
+##########
+
+variable "subnet_group" {
+  default = ""
+}
+
+variable "subnet_a" {
+  default = ""
+}
+
+variable "subnet_b" {
+  default = ""
+}
+
+############
+# SECURITY #
+############
+
+variable "security_groups" {
+  default = []
+}
