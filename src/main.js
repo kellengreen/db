@@ -31,11 +31,11 @@ import {
 async function main() {
   const command = process.argv[2];
 
-  const cluster = new Map([
-    ["blue", clusterBlue],
-    ["green", clusterGreen],
-    [undefined, clusterProxy],
-  ]).get(process.argv[3]);
+  const cluster = {
+    blue: clusterBlue,
+    green: clusterGreen,
+    proxy: clusterProxy,
+  }[process.argv[3]];
 
   switch (command) {
     case "init":
